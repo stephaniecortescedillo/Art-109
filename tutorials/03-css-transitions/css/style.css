@@ -31,5 +31,5 @@
 .button:hover{
     background-color: #a4e017;
     transform: scale(1.5);
-    color: #5e2d96;
+    color: rgb(94, 45, 150);
 }
