@@ -1,0 +1,35 @@
+
+
+
+.title{
+    font-family: cursive;
+}
+.square{
+    background-color: #5e2d96;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+.square:hover{
+    background-color: #7cddee;
+    transform: rotate(30deg);
+}
+.button-div{
+    text-align: center;
+}
+.button {
+    color: rgb(17, 13, 24);
+    background-color: #927ea8;
+   padding: 15px;
+   border-radius: 10px;
+   text-decoration: none;
+   display: inline-block;
+   transition: all .5s;
+}
+.button:hover{
+    background-color: #a4e017;
+    transform: scale(1.5);
+    color: #5e2d96;
+}

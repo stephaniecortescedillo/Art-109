@@ -1,0 +1,96 @@
+
+
+
+
+body{
+    animation: change-color 4s infinite alternate;
+    background-color: #c9b7dd;
+}
+
+@keyframes change-color{
+   0% {background-color: #c9b7dd;}
+   50% {background-color: #b1cff7;}
+    100% {background-color: #d4e4b0;}
+}
+
+.title{
+    font-family: cursive;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew{
+   0% {transform: skew(0deg,0deg);}
+   0% {transform: skew(20deg,50deg);}
+   0% {transform: skew(60deg,60deg);}
+   
+}
+
+
+.square{
+    background-color: #5e2d96;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover{
+    background-color: #7cddee;
+    transform: rotate(30deg);
+}
+.button-div{
+    text-align: center;
+}
+.button {
+    color: rgb(17, 13, 24);
+    background-color: #927ea8;
+   padding: 15px;
+   border-radius: 10px;
+   text-decoration: none;
+   display: inline-block;
+   transition: all .5s;
+}
+.button:hover{
+    background-color: #a4e017;
+    transform: scale(1.5);
+    color: #5e2d96;
+}
+
+.cat{
+    text-align: center;
+    animation: scale 5s infinite alternate;
+}
+@keyframes scale{
+   0% { transform: scale(1.5);}
+   100% { transform: scale(3);}
+}
+
+
+.loading{
+background-color: #7cddee;
+animation: strech 5s infinite alternate;
+width: 50vw;
+}
+
+@keyframes strech{
+   0% {width:  100px;}
+   100% {width:  500px;}
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 1000px;
+    position: relative;
+    background-color: #ad67aa;
+    animation: position 4s infinite alternate;
+}
+
+@keyframes position {
+  0%   { left:50px; top:0px;}
+  50%  { left:500px; top:0px;}
+  100% { left:50px; top:200px;}
+}
