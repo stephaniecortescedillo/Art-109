@@ -28,10 +28,17 @@ html{
 /*General CSS*/
 body {
     background-color: #5d817d;
-    font-family: cursive;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 3rem;
     color: #072419;
+     text-align: justify;
+}
+
+@media (max-width:  620px){
+    body{
+        font-size: 1.3rem;
+    }
 }
 
 nav {
@@ -46,9 +53,9 @@ color: #718d8b;
 
 nav a:hover {
 color: #9cc7b6;
-/*transform: scale(1.5);*/
-
 }
+
+
 
 header{
     padding: 5rem ;
@@ -60,9 +67,19 @@ header{
 }
 
 header h1{
-    font-family: "Fugaz One";
+    font-family: "Fugaz One", sans-serif;
     font-size: 3rem;
 
+}
+
+main{
+    margin: 0;
+}
+
+@media (max-width:820px){
+    main{
+        margin: 1rem;
+    }
 }
 
 .about-section, .portfolio-section, .contact-section {
@@ -71,18 +88,17 @@ header h1{
 
 .about-content, .portfolio-content, .contact-content {
     max-width: 45rem;
-    margin:2rem auto;
+    margin: 2rem auto;
  }
 
 .about-content h2, .portfolio-content h2, .contact-content h2 {
     margin: 2rem 0;
-    font-family: "Fugaz One";
+     font-family: "Fugaz One", sans-serif;
 }
 .portfolio-item {
     margin-bottom: 5rem;
     padding: 3rem;
     background-color: #5d817d;
-     text-align: justify;
      border-radius: 2rem;
      box-shadow: 0 4px 12px #00000014;
 }
