@@ -1,4 +1,17 @@
 
+/*Color palette:
+
+link highlight: #9cc7b6
+Header background: #213631
+Text: #072419
+Background: #718d8b
+Item bg / Separadores :#5d817d
+
+
+
+*/
+
+
 /*CSS resets*/
 
 *{
@@ -9,11 +22,12 @@
 
 html{
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 /*General CSS*/
 body {
-    background-color: #4b756c;
+    background-color: #5d817d;
     font-family: cursive;
     font-size: 1.5rem;
     line-height: 3rem;
@@ -27,24 +41,28 @@ nav {
 }
 nav a {
 text-decoration: none;
-color: #ffffff;
+color: #718d8b;
 }
 
 nav a:hover {
-color: #c0f8e2;
+color: #9cc7b6;
+/*transform: scale(1.5);*/
 
 }
+
 header{
     padding: 5rem ;
     margin-bottom: 3rem;
     background-color: #213631;
     text-align: center;
-    color: #9cc7b6;
-    border-bottom: #041b12 2px solid;
+    color: #718d8b;
+    border-bottom: #072419 2px solid;
 }
 
 header h1{
-font-size: 3rem;
+    font-family: "Fugaz One";
+    font-size: 3rem;
+
 }
 
 .about-section, .portfolio-section, .contact-section {
@@ -57,17 +75,18 @@ font-size: 3rem;
  }
 
 .about-content h2, .portfolio-content h2, .contact-content h2 {
-margin: 2rem 0;
+    margin: 2rem 0;
+    font-family: "Fugaz One";
 }
 .portfolio-item {
     margin-bottom: 5rem;
     padding: 3rem;
-    background-color: #618b91;
+    background-color: #5d817d;
      text-align: justify;
      border-radius: 2rem;
      box-shadow: 0 4px 12px #00000014;
-    /*multiple color border: border-color:#618b91 #618b91 #618b91 #618b91 */
 }
+
 .portfolio-item img {
     max-width: 100%;
     margin: 0 auto;
@@ -87,8 +106,8 @@ border-radius: 1rem;
 }
 
 footer {
-    background-color: #1b3131;
-    color: #9cc7b6;
+    background-color: #213631;
+    color: #718d8b;
     padding: 2rem;
     font-size: 1rem;
 }
