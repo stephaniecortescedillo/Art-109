@@ -1,15 +1,14 @@
 
-/*Color palette:
 
-link highlight: #9cc7b6
-Header background: #213631
-Text: #072419
-Background: #718d8b
-Item bg / Separadores :#5d817d
+:root {
+  --bg-color: #718d8b;
+  --Text: #072419;
+  --Header-background: #213631;
+  --highlight: #9cc7b6;
+  --Item:#5d817d;
 
+}
 
-
-*/
 
 
 /*CSS resets*/
@@ -27,11 +26,11 @@ html{
 
 /*General CSS*/
 body {
-    background-color: #5d817d;
+    background-color: var( --Item);
     font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 3rem;
-    color: #072419;
+    color:  var( --Text);
      text-align: justify;
 }
 
@@ -47,22 +46,21 @@ nav {
     top: 1rem;
 }
 nav a {
-text-decoration: none;
-color: #718d8b;
+    text-decoration: none;
+    color: var(--bg-color);
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-color: #9cc7b6;
+    color: var( --highlight);
 }
-
-
 
 header{
     padding: 5rem ;
     margin-bottom: 3rem;
-    background-color: #213631;
+    background-color:  var(--Header-background);
     text-align: center;
-    color: #718d8b;
+    color: var(--bg-color);
     border-bottom: #072419 2px solid;
 }
 
@@ -98,7 +96,7 @@ main{
 .portfolio-item {
     margin-bottom: 5rem;
     padding: 3rem;
-    background-color: #5d817d;
+    background-color: var(--Item);
      border-radius: 2rem;
      box-shadow: 0 4px 12px #00000014;
 }
@@ -111,19 +109,19 @@ border-radius: 1rem;
 }
 
 .portfolio-section {
-    background-color: #718d8b;
+    background-color:var(--bg-color);
     text-align: center;
     padding: 1rem 0;
 }
 
 
 .about-section {
-    background-color: #718d8b
+    background-color:var(--bg-color);
 }
 
 footer {
-    background-color: #213631;
-    color: #718d8b;
+    background-color: var(--Header-background);
+    color: var(--bg-color);
     padding: 2rem;
     font-size: 1rem;
 }
