@@ -1,12 +1,14 @@
 
 
 :root {
-  --bg-color: #072419;
-  --Text:#718d8b;
-  --Header-background: #5d817d ;
+   --bg-color: #718d8b;
+  --Text: #072419;
+  --Header-background: #213631;
   --highlight: #9cc7b6;
-  --Item:#213631;
+  --Item:#5d817d;
+
 }
+
 
 
 
@@ -205,6 +207,46 @@ footer img {
     }
 }
 
+/*Image Gallery Hover*/
+
+.container {
+  display: flex;
+  width: 110%;
+  padding: 0, 2%;
+  box-sizing: border-box;
+  height: 70vh;
+}
+/*text box*/
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 1%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 100%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 10%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
 /*Flex style*/
 
 .flex-container {
