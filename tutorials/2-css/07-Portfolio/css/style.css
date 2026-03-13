@@ -60,7 +60,11 @@ header{
 }
 header h1 {
     text-shadow: -5px 5px 0px #9cc7b6, -10px 10px 0px #01cccc80, -15px 15px 0px #00bdbd44;
-}
+   
+    color: #2b858544;
+
+    text-shadow: 0 1px 0 #9cc7c3, 0 2px 0 #01cccc80, 0 3px 0 #5092a3, 0 4px 0  #15412f, 0 5px 0  #3d584e, 0 6px 1px #2245661a, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    }
 
 nav a {
     text-decoration: none;
@@ -136,7 +140,12 @@ main{
         margin: 1rem;
     }
 }
-
+@media (max-width:500px){
+    main  h2{
+        font-size: 2rem;
+    }
+    
+}
 
 .about-content, .portfolio-content, .content-content, .project-content{
     max-width: 70rem;
@@ -144,19 +153,16 @@ main{
 }
 
 .about-content h2, .portfolio-content h2, .content-content h2, .project-content h2 {
-    margin: 3rem;
+    margin: 1rem;
 }
+
 
 .project-content{
 text-align: justify;
-
 }
 
 .project-content img{
-     margin: 0 auto;
-     
-     
-
+     margin: 0 auto;  
 }
 
 
@@ -211,11 +217,26 @@ footer img {
 
 .container {
   display: flex;
-  width: 110%;
+  width: 100%;
   padding: 0, 2%;
   box-sizing: border-box;
-  height: 70vh;
+  height: 60vh;
 }
+
+@media(max-width:800px){
+ .container{
+    height: 50vh;
+ }
+}
+
+
+@media(max-width:600px){
+ .container{
+    height: 35vh;
+ }
+}
+
+
 /*text box*/
 .box {
   flex: 1;
@@ -234,10 +255,10 @@ footer img {
 }
 
 .box > span {
-  font-size: 3.8vh;
+  font-size: 3vh;
   display: block;
   text-align: center;
-  height: 10vh;
+  height: 5vh;
   line-height: 2.6;
 }
 
