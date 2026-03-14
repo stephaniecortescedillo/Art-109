@@ -3,7 +3,7 @@ let gui;
 var a, b, c,d,e, Y, N, M;
 var g1;
 
-function intro() {
+function intro () {
  
   this.setup = function() {
     textSize(30);
