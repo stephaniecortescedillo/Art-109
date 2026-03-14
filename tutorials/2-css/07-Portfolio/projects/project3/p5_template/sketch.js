@@ -55,7 +55,7 @@ function setup() {
 
   mgr = new SceneManager();
   // Preload scenes but needed if showNextScene() is used.
-  mgr.addScene (intro );
+  mgr.addScene (intro);
   mgr.addScene (ins1);
   mgr.addScene (game1);
   mgr.addScene (ins2);
