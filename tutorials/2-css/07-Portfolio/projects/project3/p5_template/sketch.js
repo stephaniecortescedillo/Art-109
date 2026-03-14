@@ -25,11 +25,11 @@ function preload() {
   snd5 = loadSound("assets/sinnesloschen-beam-117362.mp3");
 
   //background images
-  s1 = loadImage("assets/s1.png");
-  s2 = loadImage("assets/s2.png");
+  s1 = loadImage("assets/s1.PNG");
+  s2 = loadImage("assets/s2.PNG");
   s3 = loadImage("assets/s3.png");
   s4 = loadImage("assets/s4.png");
-  bg = loadImage("assets/bg.gif");
+  bg = loadImage("assets/bg.GIF");
 
 //fonts
   tv = loadFont("assets/NotTunedTV.ttf");
@@ -43,9 +43,9 @@ function preload() {
       loadImage("assets/2.png"),
   ];
   imageArray2 = [
-      loadImage("assets/6.png"),
-      loadImage("assets/7.png"),
-      loadImage("assets/8.png"),
+      loadImage("assets/6.PNG"),
+      loadImage("assets/7.PNG"),
+      loadImage("assets/8.PNG"),
   ];
 }
 
