@@ -4,7 +4,6 @@ let cat,vives;
 let tv,ks; 
 var s4,s5,bg;
 var mgr;
-let intro;
 
 //game
 let points = 0;
