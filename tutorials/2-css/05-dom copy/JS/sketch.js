@@ -1,9 +1,11 @@
 let Canvas;
 let points = [];
 let font;
+let r = 15; let angle = 0;
+
 
 function preload(){
-    font =loadFont(".../images/FugazOne-Regular.ttf");
+    font =loadFont("images/FugazOne-Regular.ttf");
 }
 
 function setup (){
@@ -12,7 +14,7 @@ function setup (){
     Canvas.style("z-index", "-2");
     noStroke();
   
-  points = font.textToPoints("CAT", 100, 300, 300, {
+  points = font.textToPoints("CAT", 200, 300, 300, {
     sampleFactor:0.1,
     simplifyThreshold: 0
   });
@@ -25,7 +27,9 @@ function windowResized(){
 
 function draw(){
     fill (random(225),random(225),random(225));
-     star (mouseX, mouseY, 5,12, 5);
+     star (mouseX, mouseY, 15, 36, 15);
+
+    
      //letters
     for (let i=0; i<points.length; i++) {
     ellipse(points[i].x + r*sin(angle + i*25), points[i].y, 10, 10);
