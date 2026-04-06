@@ -1,11 +1,13 @@
-const webcamVideo = document. querySelector ("#webcam")
+
+
+const webcamVideo = document.querySelector("#webcam");
 
 async function startWebcam(params) {
     try{
-const stream = await navigator.mediaDevices.getUserMedia({
+    const stream = await navigator.mediaDevices.getUserMedia({
     video: true,
     audio: false
-})
+});
 
     webcamVideo.srcObject = stream;
 
