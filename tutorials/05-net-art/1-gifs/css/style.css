@@ -1,19 +1,20 @@
 
 
 .gif3 {
-    position: 50px absolute;
+    position: absolute;
     top: 20px;
     left: 30px;
     
 }
 .text {
-    margin: 50px absolute;
+    position: relative;
+    margin: 50px auto;
     max-width: 600px;
     font-size: 4rem;
 }
 .gif2 {
-    position: 50px;
-    top: 20px;
+    position: absolute;
+    top: 30px;
     left: 30px;
 
 }

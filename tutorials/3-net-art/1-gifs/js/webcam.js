@@ -1,1 +1,0 @@
-const webcamVideo = document. querySelector ()
