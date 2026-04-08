@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 3</title>
-
+    <title>DOM +JS</title>
     <link rel="stylesheet" href="css/style.css">
-
-
+     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
 </head>
 <body>
     
+    <header>
+        <h1 id="header"> Cats </h1>
+        <button class ="CAT" id="change-header-button">🐱</button>
+    </header>
+
+    <main>
+        <button id="change-theme-button">Switch to light theme</button>
+    <img src="images/C1.jpg" alt ="cat with lolipop" id="img1">
+    <img src="images/C2.jpg" alt ="Cat with juice" class="hidden" id="img2">
+    <img src="images/C3.jpg" alt ="Cat makig peace sign" class="hidden" id="img3">
+    </main>
 
 
 
 
-<script src="js/Main.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/sketch.js"></script>
 </body>
 </html>
