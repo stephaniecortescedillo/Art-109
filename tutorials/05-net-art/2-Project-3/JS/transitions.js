@@ -3,11 +3,7 @@ const header = document.querySelector("#header");
 const changeHeaderButton = document.querySelector("#change-header-button");
 const changeThemeButton = document.querySelector("#change-theme-button");
 
-//test
-//const img1 =document.querySelector ("#img1");
-//const img2 =document.querySelector ("#img2");
-
-//real
+//constelations
 
 const co1 =document.querySelector ("#co1");
 const co11 =document.querySelector ("#co11");
@@ -69,14 +65,8 @@ changeThemeButton.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 })
 
-//test
 
-//img1.addEventListener("click", () => {
- // img1.classList.add("hidden");     // hide img1
-//  img2.classList.remove("hidden");  // show img2
-//});
-
-//real work
+//work
 
 co1.addEventListener("click", () => {
   co1.classList.add("hidden");     // hide img1

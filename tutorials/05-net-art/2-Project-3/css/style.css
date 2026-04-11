@@ -108,13 +108,13 @@ img{
 
 #co4, #co44 {
     position: absolute;
-    top: 48rem;
+    top: 43rem;
    
 }
 
 #co5, #co55 {
     position: absolute;
-    top: 14rem;
+    top: 9rem;
     right:55rem;
 }
 
@@ -164,18 +164,43 @@ img{
 
 #s1 {
     position: absolute;
-    top: 23rem;
-    left: 45rem;
+    top: 16rem;
+    left: 65rem;
 }
 
 #s4 {
     position: absolute;
-    top: 20rem;
-    right: 46rem;
+    top: 28rem;
+    right: 59rem;
 }
 
 #s3 {
     position: absolute;
-    top: 30rem;
-    right: 50rem;
+    top: 60rem;
+    right: 38rem;
+}
+
+#s2 {
+    position: absolute;
+    top: 16rem;
+    left: 65rem;
+}
+
+#s5 {
+    position: absolute;
+    top: 67rem;
+   
+}
+
+#s6 {
+    position: absolute;
+     top: 10rem;
+    right: 90rem;
+}
+
+#s7 {
+    position: absolute;
+    top: 70rem;
+    right: 63rem;
+   
 }
