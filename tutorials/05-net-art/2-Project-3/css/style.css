@@ -31,19 +31,19 @@ img {
   display: block;
 }
 
-/* Color Variables 
+/* Color Variables */
 :root {
---bg: #4b467a;
---Text:#252258;
+--bg: #040924;
+--Text:#a8c1c9;
   
 }
 
 body.dark{
---bg: #8a68b899;
---Text:#3b145c;
+--bg: #0e021f;
+--Text:#baa8c9;
 }
 
-*/
+
 
 /* General CSS*/
 
@@ -53,12 +53,15 @@ body{
 }
 
 header{
-    padding: 5rem;
+    padding: 25rem;
+     font-size: 2rem;
+  
 }
-.CAT{
+
+.STARB{
   background: none;
     border: none;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 main{
     max-width: 60rem;
@@ -66,24 +69,113 @@ main{
 
 }
 img{
-    width: 20rem;
+    width: 15rem;
 }
 
 .hidden{
     display: none;
 }
+
+/* gifs*/
+
 #img1 {
     position: absolute;
-    top: 5rem;
+    top: 3rem;
     right: 5rem;
 }
-#img2 {
+
+ #img2 {
     position: absolute;
-    bottom: 8rem;
-    right: 3rem;
+    top: 3rem;
+    right: 10rem;
 }
-#img3 {
+#co1, #co11 {
+    position: absolute;
+    top: 2rem;
+}
+
+#co2, #co22 {
+    position: absolute;
+    top: 5rem;
+    left: 26rem;
+}
+
+#co3, #co33 {
+    position: absolute;
+    top: 7rem;
+    right: 20rem;
+}
+
+#co4, #co44 {
+    position: absolute;
+    top: 48rem;
+   
+}
+
+#co5, #co55 {
+    position: absolute;
+    top: 14rem;
+    right:55rem;
+}
+
+#co6, #co66 {
+    position: absolute;
+    top: 56rem;
+    right: 57rem;
+}
+
+#co7, #co77 {
+    position: absolute;
+    top: 5rem;
+    right: 25rem;
+}
+
+#co8, #co88 {
+    position: absolute;
+    top: 55rem;
+    left:86rem;
+}
+
+#co9, #co99 {
+    position: absolute;
+    top: 26rem;
+    left:2rem;
+}
+
+#co10, #co100 {
+    position: absolute;
+    top:34rem;
+    left:62rem;
+}
+
+#co0, #co00 {
+    position: absolute;
+    top: 40rem;
+    left:28rem;
+}
+
+#co, #coc {
+    position: absolute;
+    top: 65rem;
+    right: 85rem;
+}
+
+/* extra gifs*/
+
+#s1 {
+    position: absolute;
+    top: 23rem;
+    left: 45rem;
+}
+
+#s4 {
     position: absolute;
     top: 20rem;
-    left: 2rem;
+    right: 46rem;
+}
+
+#s3 {
+    position: absolute;
+    top: 30rem;
+    right: 50rem;
 }
