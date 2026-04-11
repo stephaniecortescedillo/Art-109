@@ -41,6 +41,34 @@ const co00 =document.querySelector ("#co00");
 const co =document.querySelector ("#co");
 const coc =document.querySelector ("#coc");
 
+//extra
+const s1 =document.querySelector ("#co1");
+const tx1 =document.querySelector ("#tx1");
+
+const s2 =document.querySelector ("#co1");
+const tx2 =document.querySelector ("#tx2");
+
+const s3 =document.querySelector ("#co1");
+const tx3 =document.querySelector ("#tx3");
+
+const s4 =document.querySelector ("#co1");
+const tx4 =document.querySelector ("#tx4");
+
+const s5 =document.querySelector ("#co1");
+const tx5 =document.querySelector ("#tx5");
+
+const s6 =document.querySelector ("#co1");
+const tx6 =document.querySelector ("#tx6");
+
+const s7 =document.querySelector ("#co1");
+const tx7 =document.querySelector ("#tx7");
+
+
+
+
+
+
+
 
 //change header with button click
 changeHeaderButton.addEventListener("click",() => {
@@ -126,4 +154,48 @@ co7.addEventListener("click", () => {
 co0.addEventListener("click", () => {
   co0.classList.add("hidden");     // hide img1
   co00.classList.remove("hidden");  // show img2
+});
+
+//extra
+
+s1.addEventListener("click", () => {
+  s1.classList.add("hidden");     // hide img1
+  tx1.classList.remove("hidden");  // show img2
+  tx1.textContent = "Space fact";
+});
+
+s2.addEventListener("click", () => {
+  s2.classList.add("hidden");     // hide img1
+  tx2.classList.remove("hidden");  // show img2
+  tx2.textContent = "Space fact";
+});
+
+s3.addEventListener("click", () => {
+  s3.classList.add("hidden");     // hide img1
+  tx3.classList.remove("hidden");  // show img2
+  tx3.textContent = "Space fact";
+});
+
+s4.addEventListener("click", () => {
+  s4.classList.add("hidden");     // hide img1
+  tx4.classList.remove("hidden");  // show img2
+  tx4.textContent = "Space fact";
+});
+
+s5.addEventListener("click", () => {
+  s5.classList.add("hidden");     // hide img1
+  tx5.classList.remove("hidden");  // show img2
+  tx5.textContent = "Space fact";
+});
+
+s6.addEventListener("click", () => {
+ s6.classList.add("hidden");     // hide img1
+  tx6.classList.remove("hidden");  // show img2
+  tx6.textContent = "Space fact";
+});
+
+s7.addEventListener("click", () => {
+  s7.classList.add("hidden");     // hide img1
+  tx7.classList.remove("hidden");  // show img2
+  tx7.textContent = "Space fact";
 });
