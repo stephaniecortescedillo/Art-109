@@ -4,8 +4,8 @@ const changeHeaderButton = document.querySelector("#change-header-button");
 const changeThemeButton = document.querySelector("#change-theme-button");
 
 //test
-const img1 =document.querySelector ("#img1");
-const img2 =document.querySelector ("#img2");
+//const img1 =document.querySelector ("#img1");
+//const img2 =document.querySelector ("#img2");
 
 //real
 
@@ -71,10 +71,10 @@ changeThemeButton.addEventListener("click", () => {
 
 //test
 
-img1.addEventListener("click", () => {
-  img1.classList.add("hidden");     // hide img1
-  img2.classList.remove("hidden");  // show img2
-});
+//img1.addEventListener("click", () => {
+ // img1.classList.add("hidden");     // hide img1
+//  img2.classList.remove("hidden");  // show img2
+//});
 
 //real work
 
