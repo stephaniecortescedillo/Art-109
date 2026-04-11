@@ -1,5 +1,4 @@
 
-
 const header = document.querySelector("#header");
 const changeHeaderButton = document.querySelector("#change-header-button");
 const changeThemeButton = document.querySelector("#change-theme-button");
