@@ -154,6 +154,8 @@ img{
     left:28rem;
 }
 
+
+
 #co, #coc {
     position: absolute;
     top: 65rem;
@@ -162,43 +164,43 @@ img{
 
 /* extra gifs*/
 
-#s1 {
+#s1, #tx1 {
     position: absolute;
     top: 16rem;
     left: 65rem;
 }
 
-#s4 {
+#s4, #tx4 {
     position: absolute;
     top: 28rem;
     right: 59rem;
 }
 
-#s3 {
+#s3, #tx3 {
     position: absolute;
     top: 60rem;
     right: 38rem;
 }
 
-#s2 {
+#s2, #tx2 {
     position: absolute;
     top: 16rem;
     left: 65rem;
 }
 
-#s5 {
+#s5, #tx5 {
     position: absolute;
     top: 67rem;
    
 }
 
-#s6 {
+#s6, #tx6 {
     position: absolute;
      top: 10rem;
     right: 90rem;
 }
 
-#s7 {
+#s7, #tx7 {
     position: absolute;
     top: 70rem;
     right: 63rem;
