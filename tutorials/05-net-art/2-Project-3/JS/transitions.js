@@ -161,41 +161,41 @@ co0.addEventListener("click", () => {
 s1.addEventListener("click", () => {
   s1.classList.add("hidden");     // hide img1
   tx1.classList.remove("hidden");  // show img2
-  tx1.textContent = "Space fact";
+  tx1.textContent = "The solar system formed 4.6 billion years ago";
 });
 
 s2.addEventListener("click", () => {
   s2.classList.add("hidden");     // hide img1
   tx2.classList.remove("hidden");  // show img2
-  tx2.textContent = "Space fact";
+  //tx2.textContent = "A day is longer than a year on Venus ";
 });
 
 s3.addEventListener("click", () => {
   s3.classList.add("hidden");     // hide img1
   tx3.classList.remove("hidden");  // show img2
-  tx3.textContent = "Space fact";
+  tx3.textContent = "Our solar system has hundreds of moons orbiting planets";
 });
 
 s4.addEventListener("click", () => {
   s4.classList.add("hidden");     // hide img1
   tx4.classList.remove("hidden");  // show img2
-  tx4.textContent = "Space fact";
+  tx4.textContent = "Asteroids can have rings and moons";
 });
 
 s5.addEventListener("click", () => {
   s5.classList.add("hidden");     // hide img1
   tx5.classList.remove("hidden");  // show img2
-  tx5.textContent = "Space fact";
+  tx5.textContent = "Mercury and Venus have no moon";
 });
 
 s6.addEventListener("click", () => {
  s6.classList.add("hidden");     // hide img1
   tx6.classList.remove("hidden");  // show img2
-  tx6.textContent = "Space fact";
+  tx6.textContent = "The Sun is the biggest object in our solar system";
 });
 
 s7.addEventListener("click", () => {
   s7.classList.add("hidden");     // hide img1
   tx7.classList.remove("hidden");  // show img2
-  tx7.textContent = "Space fact";
+  tx7.textContent = "A shooting star color depends on what its made of";
 });
