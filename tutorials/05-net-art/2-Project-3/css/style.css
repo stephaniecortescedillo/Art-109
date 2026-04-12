@@ -47,6 +47,8 @@ body.dark{
 
 /* General CSS*/
 
+
+
 body{
     color: var(--Text);
     background-color: var(--bg);
@@ -75,6 +77,8 @@ img{
 .hidden{
     display: none;
 }
+
+
 
 /* gifs*/
 
@@ -154,8 +158,6 @@ img{
     left:28rem;
 }
 
-
-
 #co, #coc {
     position: absolute;
     top: 65rem;
@@ -166,20 +168,8 @@ img{
 
 #s1, #tx1 {
     position: absolute;
-    top: 16rem;
-    left: 65rem;
-}
-
-#s4, #tx4 {
-    position: absolute;
-    top: 28rem;
-    right: 59rem;
-}
-
-#s6, #tx3 {
-    position: absolute;
-    top: 60rem;
-    right: 38rem;
+    top: 40rem;
+    left: 15rem;
 }
 
 #s2, #tx2 {
@@ -188,17 +178,32 @@ img{
     left: 65rem;
 }
 
+#s3, #tx3 {
+    position: absolute;
+     top: 10rem;
+    right: 90rem;
+}
+
+
+#s4, #tx4 {
+    position: absolute;
+    top: 38rem;
+    right: 59rem;
+}
+
+
 #s5, #tx5 {
     position: absolute;
     top: 67rem;
    
 }
 
-#s3, #tx6 {
+#s6, #tx6 {
     position: absolute;
-     top: 10rem;
-    right: 90rem;
+    top: 60rem;
+    right: 38rem;
 }
+
 
 #s7, #tx7 {
     position: absolute;

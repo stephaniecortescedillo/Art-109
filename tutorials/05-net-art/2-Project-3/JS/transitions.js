@@ -42,25 +42,25 @@ const co =document.querySelector ("#co");
 const coc =document.querySelector ("#coc");
 
 //extra
-const s1 =document.querySelector ("#co1");
+const s1 =document.querySelector ("#s1");
 const tx1 =document.querySelector ("#tx1");
 
-const s2 =document.querySelector ("#co1");
+const s2 =document.querySelector ("#s2");
 const tx2 =document.querySelector ("#tx2");
 
-const s3 =document.querySelector ("#co1");
+const s3 =document.querySelector ("#s3");
 const tx3 =document.querySelector ("#tx3");
 
-const s4 =document.querySelector ("#co1");
+const s4 =document.querySelector ("#s4");
 const tx4 =document.querySelector ("#tx4");
 
-const s5 =document.querySelector ("#co1");
+const s5 =document.querySelector ("#s5");
 const tx5 =document.querySelector ("#tx5");
 
-const s6 =document.querySelector ("#co1");
+const s6 =document.querySelector ("#s6");
 const tx6 =document.querySelector ("#tx6");
 
-const s7 =document.querySelector ("#co1");
+const s7 =document.querySelector ("#s7");
 const tx7 =document.querySelector ("#tx7");
 
 
@@ -159,43 +159,37 @@ co0.addEventListener("click", () => {
 //extra
 
 s1.addEventListener("click", () => {
-  s1.classList.add("hidden");     // hide img1
   tx1.classList.remove("hidden");  // show img2
   tx1.textContent = "The solar system formed 4.6 billion years ago";
 });
 
 s2.addEventListener("click", () => {
-  s2.classList.add("hidden");     // hide img1
   tx2.classList.remove("hidden");  // show img2
-  //tx2.textContent = "A day is longer than a year on Venus ";
+  tx2.textContent = "A day is longer than a year on Venus ";
 });
 
 s3.addEventListener("click", () => {
-  s3.classList.add("hidden");     // hide img1
+
   tx3.classList.remove("hidden");  // show img2
-  tx3.textContent = "Our solar system has hundreds of moons orbiting planets";
+  tx3.textContent = "Our solar system has hundreds of moons ";
 });
 
 s4.addEventListener("click", () => {
-  s4.classList.add("hidden");     // hide img1
   tx4.classList.remove("hidden");  // show img2
   tx4.textContent = "Asteroids can have rings and moons";
 });
 
 s5.addEventListener("click", () => {
-  s5.classList.add("hidden");     // hide img1
   tx5.classList.remove("hidden");  // show img2
   tx5.textContent = "Mercury and Venus have no moon";
 });
 
 s6.addEventListener("click", () => {
- s6.classList.add("hidden");     // hide img1
   tx6.classList.remove("hidden");  // show img2
-  tx6.textContent = "The Sun is the biggest object in our solar system";
+  tx6.textContent = " Precious metals are forged when dead stars collide ";
 });
 
 s7.addEventListener("click", () => {
-  s7.classList.add("hidden");     // hide img1
   tx7.classList.remove("hidden");  // show img2
   tx7.textContent = "A shooting star color depends on what its made of";
 });
