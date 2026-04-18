@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Build your shopping list</h1>
+        </header>
+        <main>
+            <!-- Form section for selecting or entering milk type -->
+            <form id="milk-form">
+                <!-- Label and select dropdown for predefined choices -->
+                <label for="milk-type">Choose your milk type:</label>
+                <select id="milk-type">
+                    <option value="">Select a type</option>
+                    <option value="Almond">Almond</option>
+                    <option value="Soy">Soy</option>
+                    <option value="Oat">Oat</option>
+                    <option value="Cow">Cow</option>
+                    <option value="Cow">Goat</option>
+                    <option value="Coconut">Coconut</option>
+                </select>
+                <!-- Label and text input for custom entry -->
+                <label for="custom-milk">What else:</label>
+                <input type="text" id="custom-milk" placeholder="e.g.,Carrots, Wine, Napkins">
+                <!-- Button to submit the form and add to list -->
+                <button type="submit">Add to Shopping List</button>
+            </form>
+            <!-- Section to display the shopping list -->
+            <section id="shopping-list">
+                <h2>Your Shopping List</h2>
+                <ul id="list"></ul>
+            </section>
+            <!-- Carousel section for quick-add images -->
+            <section id="carousel-section">
+                <h2>Quick Add Items</h2>
+                <div class="carousel-container">
+                    <!-- Previous button for carousel navigation -->
+                    <button id="prev-btn">&lt;</button>
+                    <!-- Carousel images container -->
+                    <div class="carousel">
+                        <img src="images/water-bottle.jpg" alt="Water Bottle" data-item="Water Bottle">
+                        <img src="images/chicken.jpg" alt="Chicken" data-item="Chicken">
+                        <img src="images/dog-food.jpg" alt="Dog Food" data-item="Dog Food">
+                    </div>
+                    <!-- Next button for carousel navigation -->
+                    <button id="next-btn">&gt;</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

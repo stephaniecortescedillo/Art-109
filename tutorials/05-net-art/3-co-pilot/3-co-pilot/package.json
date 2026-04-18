@@ -1,0 +1,21 @@
+{
+  "name": "3-co-pilot",
+  "version": "1.0.0",
+  "description": "A futuristic-looking responsive website that allows user input for a shopping list.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "responsive",
+    "shopping list",
+    "user input",
+    "futuristic"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
