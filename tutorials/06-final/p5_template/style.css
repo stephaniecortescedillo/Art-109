@@ -1,0 +1,118 @@
+
+/*
+CSS RESETS
+*/
+
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Respect user font settings */
+html {
+  font-size: 100%;
+}
+
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Color Variables */
+:root {
+--bg: #565f61;
+--Text:#a8c1c9;
+  
+}
+
+
+/* General CSS*/
+
+
+
+body{
+    color: var(--Text);
+    background-color: var(--bg);
+}
+
+
+
+.STARB{
+  background: none;
+    border: none;
+    font-size: 3rem;
+}
+main{
+    max-width: 60rem;
+    margin: 0 8rem;
+
+}
+img{
+    width: 15rem;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* kitchen */
+
+#s1, #tx1 {
+    position: absolute;
+    top: 40rem;
+    left: 15rem;
+}
+
+#s2, #tx2 {
+    position: absolute;
+    top: 16rem;
+    left: 65rem;
+}
+
+#s3, #tx3 {
+    position: absolute;
+     top: 10rem;
+    right: 90rem;
+}
+
+
+#s4, #tx4 {
+    position: absolute;
+    top: 38rem;
+    right: 59rem;
+}
+
+
+#s5, #tx5 {
+    position: absolute;
+    top: 67rem;
+   
+}
+
+#s6, #tx6 {
+    position: absolute;
+    top: 60rem;
+    right: 38rem;
+}
+
+
+#s7, #tx7 {
+    position: absolute;
+    top: 70rem;
+    right: 63rem;
+   
+}
