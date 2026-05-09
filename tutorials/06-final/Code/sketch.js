@@ -10,7 +10,7 @@ function preload() {
 
 
   //background images
-  s1 = loadImage("assets/s1.PNG");
+  s1 = loadImage("assets/bg1.png");
   s2 = loadImage("assets/bg1.png");
   s3 = loadImage("assets/bg2.jpg");
  
