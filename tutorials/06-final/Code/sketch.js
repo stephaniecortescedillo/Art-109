@@ -1,6 +1,7 @@
 //Stores stuff
 
 let s11, s22, s33, s44, s55;
+let b1, b2, b3, b4,b5;
 let message = "";
 let pd =[];
 
@@ -20,6 +21,16 @@ function preload() {
  s44 = loadImage("assets/4.gif");
  s55 = loadImage("assets/5.gif");
  s66 = loadImage("assets/6.gif");
+
+ //Crime-board images
+
+b1 = loadImage("assets/b1.png");
+b2 = loadImage("assets/b2.png");
+b3 = loadImage("assets/b3.png");
+b4 = loadImage("assets/b4.png");
+b5 = loadImage("assets/b5.png");
+b6 = loadImage("assets/b6.png");
+
 }
  
 
