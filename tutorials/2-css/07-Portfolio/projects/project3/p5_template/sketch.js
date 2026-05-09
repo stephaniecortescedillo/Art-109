@@ -5,17 +5,6 @@ let tv,ks;
 var s4,s5,bg;
 var mgr;
 
-//game
-let points = 0;
-let misses = 0;
-let maxMisses = 10;
-let timer = 10;
-let imageArray = [];
-let imageArray2 = [];
-let object, object2;
-let vel, vel2;
-let playerImage;
-let currentImage, currentImage2;
 
 
 function preload() {

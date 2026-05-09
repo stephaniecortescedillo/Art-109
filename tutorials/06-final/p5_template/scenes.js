@@ -1,35 +1,14 @@
-let loy = 0;
-let gui;
-var a, b, c,d,e, Y, N, M;
-var g1;
+
 
 function intro () {
  
   this.setup = function() {
     textSize(30);
     background(161, 252, 255);
-    console.log("We are at setup for intro");
 
 //button 1
       gui = createGui();
       N = createButton("Next", 560, 600, 150, 50); // x, y, width, height
- 
- // Volume 
- if (snd5) {
-  snd5.setVolume(0.5);
-}
-
-// Button to play the sound 
-const playSoundButton = createButton("Play Sound", 540 , 700, 200, 50);
-playSoundButton.onPress = () => {
-  if (snd5 && snd5.isLoaded()) {
-    snd5.play();
-    console.log("Sound played manually");
-  } 
-  else {
-    console.log("Sound is not loaded");
-  }
-};
     }
  
  
@@ -39,7 +18,7 @@ playSoundButton.onPress = () => {
      push();
      imageMode(CENTER);
      if (s1) {
-       image(s1, width / 2 , height / 2 , 900, 800);
+       image(s2, width / 2 , height / 2 , 900, 800);
      }
      pop();
 
@@ -47,7 +26,7 @@ playSoundButton.onPress = () => {
      textAlign(CENTER);
      fill(0);
      textSize(40);
-     textFont(tv);
+  
      
      text(" Title ", width/2+210,200);
      text("By stephanie Cortes", width/2+250,250);
@@ -59,62 +38,106 @@ playSoundButton.onPress = () => {
      }
   };
     }
-  
     
      
-///////////////////////////// page2 ///////////////
+///////////////////////////// Kitchen ///////////////
 
- function ins1()  {
-  
-  this.setup = function() {
-    background(161, 252, 255);
-    console.log("We are at setup for ins1");
-    
- // Create button
-    gui = createGui();
-    g1 = createButton("Begin Game", width / 2-100, 250, 150, 50);
-    drawGui();
-}
+ function ins1() {
 
-  this.draw = function(){
-    push();
-    imageMode(CENTER);
-    if (s2) {
-      image(s2, width / 2 , height / 2 , 900, 800);
+  this.setup = function () {
+
+    // image data
+    pd = [
+
+      {
+        x: 180,
+        y: 280,
+        w: 120,
+        h: 100,
+        img: s11,
+        text: "Blood x1"
+      },
+
+      {
+        x: 260,
+        y: 360,
+        w: 120,
+        h: 100,
+        img: s22,
+        text: "broken cup"
+      },
+
+      {
+        x: 190,
+        y: 400,
+        w: 120,
+        h: 100,
+        img: s33,
+        text: "Blood x2"
+      },
+
+      {
+        x: 390,
+        y: 400,
+        w: 120,
+        h: 100,
+        img: s44,
+        text: "Broken phone"
+      },
+
+       {
+        x: 450,
+        y: 150,
+        w: 120,
+        h: 100,
+        img: s55,
+        text: "Window shards"
+      },
+       
+      {
+        x: 300,
+        y: 520,
+        w: 120,
+        h: 100,
+        img: s33,
+        text: "Blood x3"
+      },
+
+
+    ];
+  };
+
+  this.draw = function () {
+
+    background(225);
+
+     if (s2) {
+     
+       image(s2, 0 , 0 , width, height);
+     }
+    // draw images
+    for (let p of pd) {
+
+      image(p.img, p.x, p.y, p.w, p.h);
     }
-    pop();
 
-    textSize(40);
+    // show text
     fill(0);
-    textFont(ks);
-    text("So he got his winter scarf and went outside to gather food", width/2,100);
-    text("Help frederick by catching as much food as possible",  width/2,150);
-    text("(beware the racoons and their traps)", width/2,200);
-    
-    // button
-    drawGui();
-    if (g1.isPressed) {
-      console.log("Begin Game button pressed");
-      mgr.showScene(game1); // Transition to Game1
-   }
-  } 
- }
+    textSize(24);
+    text(message, 710, 650);
+  };
 
 
-///////////////////////  Game  ////////////////////////
-
-function game1()  {
   
-  let maxMisses = 5; // Maximum allowed misses
 
-  this.setup = function() {
-    console.log("We are at setup for game1");
-
-     // Volume of effect
-    if (snd5) {
-      snd5.setVolume(0.6);
-    }
 }
+
+
+///////////////////////  Crime Board  ////////////////////////
+
+function ins2()  {
+  
+ 
 
 this.draw = function(){
     background(0);
@@ -153,11 +176,10 @@ this.keyPressed = function () {
 };
 }
 
-//////////////////////  End scene  ////////////////////////
+//////////////////////  Paperwork  ////////////////////////
 
-function ins2()  {
+function ins3()  {
   this.setup = function()  {
-    console.log("we are at set up on theend");
 }
 
 this.draw = function() {
@@ -176,3 +198,5 @@ pop();
 }
  }
 
+
+ 
