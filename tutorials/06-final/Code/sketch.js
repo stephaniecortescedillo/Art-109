@@ -35,8 +35,10 @@ b6 = loadImage("assets/b6.png");
  
 
 function setup() {
-  createCanvas(900, 800);
-  
+
+
+  let canvas = createCanvas(900, 800);
+  canvas.parent("scenemg");
 
   mgr = new SceneManager();
   // Preload scenes but needed if showNextScene() is used.

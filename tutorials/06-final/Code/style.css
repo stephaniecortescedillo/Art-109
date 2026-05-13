@@ -20,15 +20,19 @@ CSS RESETS
 
 
 /* Respect user font settings */
-html {
-  font-size: 100%;
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 /* Color Variables */
 :root {
---bg: #565f61;
---Text:#a8c1c9;
-  
+  --bg-color: #071124;
+  --Text:#718d8b;
+  --Header-background: #5d817d ;
+  --highlight: #9cc7b6;
+  --Item:#213631;
 }
 
 
@@ -36,9 +40,38 @@ html {
 
 body{
     padding: 50; 
+    background-color: var(--bg-color);
     color: var(--Text);
-    background-color: var(--bg);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: "Work Sans", sans-serif;
 }
+
+
+/* SM*/
+
+#layout {
+display:flex;
+height: 100vh;
+}
+
+#Scenemg{
+    width:70%;
+}
+#ui-panel{
+    width: 30%;
+    padding: 20px;
+   display:flex;
+   flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+
+
+/*General*/
 
 h2{
     padding: 10; 
@@ -58,3 +91,125 @@ main{
     display: none;
 }
 
+header{
+    padding: 5rem 3rem;
+
+}
+header h1 {
+    text-shadow: -5px 5px 0px #9cc7b6, -10px 10px 0px #01cccc80, -15px 15px 0px #00bdbd44;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--Text);
+    transition: all .4s ease;
+}
+
+nav a:hover{
+    color: var(--highlight)
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--highlight);
+    font-size: 3rem;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width:750px){
+    .navbar {
+        align-items: flex-start;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger{
+        display: block;
+        align-self: flex-end;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-menu.active{
+        display: flex;
+        flex-direction: column;
+        background-color:var(--Item);
+        padding: 1rem;
+    }
+    nav-menu a{
+        color: var(--bg-color);
+    }
+
+   
+}
+
+main{
+    margin: 0;
+}
+
+
+@media (max-width: 1030px){
+    main{
+        margin:2rem;
+    }
+}
+@media (max-width:750px){
+    main{
+        margin: 1rem;
+    }
+}
+
+
+footer{
+    padding: 2rem;
+}
+
+
+@media(max-width:750px){
+    footer p{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:450px){
+    footer p{
+        font-size: 1rem;
+    }
+   
+}
+
+
+/*Flex style
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-item-grid {
+    flex: 1 1 20rem;
+}
+
+*/

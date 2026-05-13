@@ -14,10 +14,8 @@ function intro () {
  
     this.draw = function() {
      background(225);
-
-     if (s1) {
        image(s2, 0 , 0 , width, height);
-     }
+    
 
 //Text
      textAlign(CENTER);
