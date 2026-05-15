@@ -28,75 +28,62 @@ html{
 
 /* Color Variables */
 :root {
-  --bg-color: #071124;
-  --Text:#718d8b;
-  --Header-background: #5d817d ;
-  --highlight: #9cc7b6;
-  --Item:#213631;
+  --bg-color: #09101d;
+  --Text:#acacac;
+  --highlight: #c24f4f;
+   --titles: #880101;
+
 }
 
 
-/* General CSS*/
 
-body{
-    padding: 50; 
-    background-color: var(--bg-color);
-    color: var(--Text);
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-family: "Work Sans", sans-serif;
-}
+/*SM*/
 
-
-/* SM*/
 
 #layout {
-display:flex;
-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 900px 1fr;
+
+    width: 100vw;
+    height: 100vh;
 }
 
-#scenemg{
-    width:70%;
+#scenemg {
+    width: 900px;
+    height: 800px;
 }
-#ui-panel{
-    width: 30%;
+
+#ui-panel {
     padding: 20px;
-   display:flex;
-   flex-direction: column;
+
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 
+    background-color: #111;
 }
-
 
 
 
 
 /*General*/
 
+
+
 h2{
     padding: 10; 
+    color: var(--titles);
 }
 
-.STARB{
-  background: none;
-    border: none;
-    font-size: 3rem;
-}
-main{
-    max-width: 60rem;
-    margin: 0 8rem;
-}
-
-.hidden{
-    display: none;
-}
 
 header{
     padding: 5rem 3rem;
 
 }
+
 header h1 {
-    text-shadow: -5px 5px 0px #9cc7b6, -10px 10px 0px #01cccc80, -15px 15px 0px #00bdbd44;
+    text-shadow: -5px 5px 0px #460000, -10px 10px 0px #cc010180, -15px 15px 0px #bd000044;
 }
 
 nav a {
@@ -128,6 +115,14 @@ nav a:hover{
     gap: 1rem;
 }
 
+body{
+    margin:0;
+    background-color: var(--bg-color);
+    color: var(--Text);
+    font-size: 1.5rem;
+    font-family:'Courier New', Courier, monospace
+}
+
 @media (max-width:750px){
     .navbar {
         align-items: flex-start;
@@ -156,21 +151,7 @@ nav a:hover{
    
 }
 
-main{
-    margin: 0;
-}
 
-
-@media (max-width: 1030px){
-    main{
-        margin:2rem;
-    }
-}
-@media (max-width:750px){
-    main{
-        margin: 1rem;
-    }
-}
 
 
 footer{

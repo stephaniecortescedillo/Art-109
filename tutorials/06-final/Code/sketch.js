@@ -35,8 +35,6 @@ b6 = loadImage("assets/b6.png");
  
 
 function setup() {
-
-
   let canvas = createCanvas(900, 800);
   canvas.parent("scenemg");
 
