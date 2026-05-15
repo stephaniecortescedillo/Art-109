@@ -44,7 +44,7 @@ html{
     display: grid;
 
     grid-template-columns: 900px 1fr;
-
+    padding: 50px;
     width: 100vw;
     height: 100vh;
 }
@@ -60,8 +60,11 @@ html{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 50px;
 
+/*
     background-color: #111;
+    */
 }
 
 
@@ -102,13 +105,6 @@ nav a:hover{
     align-items: center;
 }
 
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    color: var(--highlight);
-    font-size: 3rem;
-}
 .nav-menu {
     list-style: none;
     display: flex;
@@ -131,10 +127,7 @@ body{
         display: flex;
         flex-direction: column;
     }
-    .hamburger{
-        display: block;
-        align-self: flex-end;
-    }
+    
     .nav-menu{
         display: none;
     }
@@ -172,3 +165,124 @@ footer{
    
 }
 
+/* Forms*/
+
+
+
+
+/* Form styles */
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Select dropdown styles */
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+/* Input text styles */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Shopping list section styles */
+#shopping-list {
+    background-color: rgb(121, 197, 197); /* Light background for shopping list */
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Carousel section styles */
+#carousel-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Carousel container styles */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Carousel images container */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* Adjust based on image size */
+    transition: transform 0.3s ease; /* Smooth sliding transition */
+}
+
+/* Individual image styles in carousel */
+.carousel img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* Navigation button styles */
+#prev-btn, #next-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 250px;
+    }
+
+    .carousel img {
+        width: 80px;
+        height: 80px;
+    }
+}

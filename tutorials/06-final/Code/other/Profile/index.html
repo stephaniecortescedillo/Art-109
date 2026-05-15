@@ -19,23 +19,73 @@
     <button class="hamburger">☰</button>
     <ul class="nav-menu">
      <li><a href="../../#Case-section">Case</a></li>
-     <li><a href="../../#Files-section">Files</a></li>
-    
+     
     </ul>
    </div>
      </nav>
-
      
     </header>
 
-<main>
 
-<div id=" layout">
-           
-        <h2>✮ ⋆ ˚｡ Employee profile Form⋆｡°✩</h2>
-     <video id="webcam" autoplay playssinline></video>
+    <main>
+         <h2>✮ ⋆ ˚｡ Employee profile Form⋆｡°✩</h2>
 
-   </div>
+          <!--chage styling for this -->
+<div id="layout">
+  <video id="webcam" autoplay playssinline></video>
+  <div id="ui-panel">
+    <p>prints image placeholder </p>
+     <p>Carousel</p>
+   
+  </div>  
+</div>
+            <!-- Form section for selecting or entering milk type -->
+            <form id="milk-form">
+
+
+                <!-- Label and text input for custom entry -->
+                <label for="custom">Name:</label>
+                <input type="text" id="custom-milk" placeholder="e.g.,Carrots, Wine, Napkins">
+
+                
+                <!--Dropdown, predefined choices -->
+                <label for="choice-type">Gender:</label>
+                <select id="choice-type">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Yes">Yes</option>
+                    <option value="¯\_(ツ)_/¯">Wouldn't you like you know</option>
+            
+                </select>
+
+                  <!--Dropdown, predefined choices -->
+                <label for="choice-type">Position:</label>
+                <select id="choice-type">
+                    <option value="">Select</option>
+                    <option value="Agent">Agent</option>
+                    <option value="Forensic">Forensic</option>
+                    <option value="Secretary">Secretary</option>
+                    <option value="Eingeneer">Eingeneer</option>
+            
+                </select>
+
+                
+                <!-- Button to submit the form and add to list -->
+                <button type="submit">Add to Shopping List</button>
+            </form>
+            <!-- Section to display the shopping list -->
+            <section id="shopping-list">
+                <h2>Your Shopping List</h2>
+                <ul id="list"></ul>
+            </section>
+          
+                   
+                </div>
+            </section>
+        </main>
+
+
 
 <script src="webcam.js"></script>
 
@@ -44,7 +94,6 @@
 
 
        
-    </main>
 
  <footer class="flex-container">
         <p> &copy; ABI</p>
