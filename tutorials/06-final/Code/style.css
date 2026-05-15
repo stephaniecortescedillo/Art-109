@@ -55,7 +55,7 @@ display:flex;
 height: 100vh;
 }
 
-#Scenemg{
+#scenemg{
     width:70%;
 }
 #ui-panel{
@@ -191,25 +191,3 @@ footer{
    
 }
 
-
-/*Flex style
-
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex-container-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.flex-item-grid {
-    flex: 1 1 20rem;
-}
-
-*/
