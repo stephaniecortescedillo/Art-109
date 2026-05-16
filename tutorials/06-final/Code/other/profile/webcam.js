@@ -30,7 +30,7 @@ function addToList(item) {
     // Get the <ul> element for the list
     const list = document.getElementById('list');
     // Create a new <li> element
-    const list = document.createElement('list');
+    const li = document.createElement('li');
     // Set the text content to the item name
     li.textContent = item;
     // Add the new item to the list in the DOM
@@ -51,7 +51,7 @@ document.getElementById('form').addEventListener('submit', function(e) {
     // Prevent the default form submission behavior (which would reload the page)
     e.preventDefault();
     // Get the selected value from the dropdown
-    const selected = document.getElementById('choice-type').value;
+    const selectedMilk = document.getElementById('choice-type').value;
     // Get the value from the text input, trimmed of whitespace
     const custom = document.getElementById('custom').value.trim();
     // Determine the milk type: use dropdown if selected, otherwise use text input
