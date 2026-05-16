@@ -30,7 +30,7 @@ function addToList(item) {
     // Get the <ul> element for the list
     const list = document.getElementById('list');
     // Create a new <li> element
-    const li = document.createElement('li');
+    const list = document.createElement('list');
     // Set the text content to the item name
     li.textContent = item;
     // Add the new item to the list in the DOM
