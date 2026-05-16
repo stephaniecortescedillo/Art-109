@@ -47,15 +47,15 @@ function updateCarousel() {
 }
 
 // Event listener for the form submission
-document.getElementById('milk-form').addEventListener('submit', function(e) {
+document.getElementById('form').addEventListener('submit', function(e) {
     // Prevent the default form submission behavior (which would reload the page)
     e.preventDefault();
     // Get the selected value from the dropdown
-    const selectedMilk = document.getElementById('choice-type').value;
+    const selected = document.getElementById('choice-type').value;
     // Get the value from the text input, trimmed of whitespace
-    const customMilk = document.getElementById('custom').value.trim();
+    const custom = document.getElementById('custom').value.trim();
     // Determine the milk type: use dropdown if selected, otherwise use text input
-    const milkType = selectedMilk || customMilk;
+    const milkType = selected || custom;
     // If a valid milk type is provided, add it to the list
     if (milkType) {
         addToList(milkType);

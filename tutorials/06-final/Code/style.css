@@ -31,7 +31,8 @@ html{
   --bg-color: #09101d;
   --Text:#acacac;
   --highlight: #c24f4f;
-   --titles: #880101;
+    --titles: #880101;
+   --item: #8d9bb1;
 
 }
 
@@ -49,6 +50,17 @@ html{
     height: 100vh;
 }
 
+#layout2 {
+    display: grid;
+    background-color: var(--Item);
+    grid-template-columns: 900px 1fr;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
 #scenemg {
     width: 900px;
     height: 800px;
@@ -61,13 +73,14 @@ html{
     flex-direction: column;
     gap: 20px;
     padding: 50px;
-
-/*
-    background-color: #111;
-    */
 }
-
-
+.portfolio-item {
+    margin-bottom: 5rem;
+    padding: 3rem;
+    background-color: var(--Item);
+     border-radius: 2rem;
+     box-shadow: 0 4px 12px #00000014;
+}
 
 
 /*General*/
@@ -211,12 +224,12 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #693528; /* Darker blue on hover */
 }
 
 /* Shopping list section styles */
 #shopping-list {
-    background-color: rgb(121, 197, 197); /* Light background for shopping list */
+    background-color: rgb(17, 3, 3); /* Light background for shopping list */
     border-radius: 5px;
     padding: 20px;
     width: 80%;
@@ -285,4 +298,13 @@ button:hover {
         width: 80px;
         height: 80px;
     }
+}
+
+/*Button 1 */
+a:link, a:visited {
+
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }

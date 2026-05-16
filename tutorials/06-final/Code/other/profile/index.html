@@ -6,54 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Racoon </title>
     <link rel="stylesheet" href="../../style.css">
-    
 </head>
+
+
 <body>
- <header >
 
+     <header>
 
-    <nav class="navbar">
-<div class="nav-brand"> 
-    <a href="../../"><h1>ABI Files</h1></a>
-</div>
-   <div class="nav">
-    <ul class="nav-menu">
-     <li><a href="../../index.html">Case</a></li>
-     
-    </ul>
-   </div>
+     <nav class="navbar">
+        <div class="nav-brand"> 
+            <a href="../../"><h1>ABI Files</h1></a>
+        </div>
+        <div class="nav">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Case</a></li>
+            </ul>
+        </div>
      </nav>
-     
+    
     </header>
 
 
     <main>
-         <h2>✮ ⋆ ˚｡ Employee profile Form⋆｡°✩</h2>
-
-          <!--chage styling for this -->
-<div id="layout">
-  <video id="webcam" autoplay playssinline></video>
-  <div id="ui-panel">
-    <p>prints image placeholder </p>
-     <p>Carousel</p>
-   
-  </div>  
-</div>
-
-
- <!-- Fix spacing -->
-
-
-
+             <h2>✮ ⋆ ˚｡ Employee profile Form⋆｡°✩</h2>
+          <div id="layout2">
+                <video id="webcam" autoplay playssinline></video>
+                    <div id="ui-panel">
+                     
             <!-- Form section for selecting or entering milk type -->
-            <form id="milk-form">
-
+            <form id="form">
 
                 <!-- Label and text input for custom entry -->
-                <label for="custom">Name:</label>
-                <input type="text" id="custom-milk" placeholder="e.g.,Carrots, Wine, Napkins">
+                <label for="custom">Full name:</label>
+                <input type="text" id="custom" placeholder="Kylo, Jean, Bbrnes">
 
-                
+                 <!-- Label and text input for custom entry -->
+                <label for="custom">Species:</label>
+                <input type="text" id="custom" placeholder="Human,Twilek, Toguta,">
+
                 <!--Dropdown, predefined choices -->
                 <label for="choice-type">Gender:</label>
                 <select id="choice-type">
@@ -62,7 +52,6 @@
                     <option value="Female">Female</option>
                     <option value="Yes">Yes</option>
                     <option value="¯\_(ツ)_/¯">Wouldn't you like you know</option>
-            
                 </select>
 
                   <!--Dropdown, predefined choices -->
@@ -73,33 +62,52 @@
                     <option value="Forensic">Forensic</option>
                     <option value="Secretary">Secretary</option>
                     <option value="Eingeneer">Eingeneer</option>
-            
                 </select>
-
-                
-
-
 
                 <!-- Button to submit the form and add to list -->
                 <button type="submit">Submit</button>
-            </form>
-            
-                   
+            </form> 
+
+           
+
+         </div>  
+
+          <!-- Carousel section for quick-add images -->
+            <section id="carousel-section">
+                <h2>Quick Add Items</h2>
+                <div class="carousel-container">
+                    <!-- Previous button for carousel navigation -->
+                    <button id="prev-btn">&lt;</button>
+                    <!-- Carousel images container -->
+                    <div class="carousel">
+                        <img src="../../assets/b1.png" alt="Water Bottle" data-item="Water Bottle">
+                        <img src="../../assets/b2.png" alt="Chicken" data-item="Chicken">
+                        <img src="../../assets/b1.png" alt="Dog Food" data-item="Dog Food">
+                    </div>
+                    <!-- Next button for carousel navigation -->
+                    <button id="next-btn">&gt;</button>
                 </div>
             </section>
+           <!-- Section to display the shopping list -->
+            <section id="shopping-list">
+                <h2>Your Shopping List</h2>
+                <ul id="list"></ul>
+            </section>
+        </div>       
+             
         </main>
 
 
 
-<script src="webcam.js"></script>
-
-</body> 
+    <script src="webcam.js"></script>
+    </body> 
 
 
 
        
 
- <footer class="flex-container">
+    <footer class="flex-container">
         <p> &copy; ABI</p>
     </footer>
+
 </html>
