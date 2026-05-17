@@ -44,6 +44,7 @@ function setup() {
   mgr.addScene(ins1);
   mgr.addScene(ins2);
   mgr.addScene(ins3);
+  mgr.addScene(ins4);
 
   mgr.showNextScene();
 }
@@ -98,6 +99,7 @@ function keyPressed(){
     if (key === "2") mgr.showScene(ins1);
     if (key === "3") mgr.showScene(ins2);
     if (key === "4") mgr.showScene(ins3);
+     if (key === "5") mgr.showScene(ins4);
            
     }
 

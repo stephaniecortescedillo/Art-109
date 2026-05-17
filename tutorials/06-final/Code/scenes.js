@@ -3,10 +3,8 @@
 function intro () {
  
   this.setup = function() {
-    textSize(30);
-    background(225);
 
-//button 1
+    //button 1
       gui = createGui();
       N = createButton("Next", 560, 600, 150, 50); // x, y, width, height
     }
@@ -14,10 +12,10 @@ function intro () {
  
     this.draw = function() {
      background(225);
-       image(s2, 0 , 0 , width, height);
+     image(s2, 0 , 0 , width, height);
     
 
-//Text
+      //Text
      textAlign(CENTER);
      textSize(40);
      
@@ -134,10 +132,10 @@ function ins2() {
 
     this.dots = [
       [140,250],
-      [500,150],
-      [350,500],
-      [800,580]
-      //[500,600],
+      [620,150],
+      [300,600],
+      [700,500]
+      
     
     ];
 
@@ -145,19 +143,38 @@ function ins2() {
   }
 
   this.draw = function() {
+    //background
        background(225);
        image(s3, 0 , 0 , width, height);
+
+   //crime board images
+    image(b1, 370 , 300 , 200, 200);
+    image(b2, 80 , 200 , 200, 200);
+    image(b3, 270 , 540 , 200, 200);
+    image(b4, 605 , 100 , 200, 200);
+    image(b5, 50 , 450 , 200, 200);
+    image(b6, 645 , 350 , 200, 200);
+    //decorations
+    image(b5, 700 , 600 , 150, 150);
+    image(b5, 400 , 90 , 150, 150);
+
+
    //text
     textAlign(CENTER);
     textSize(30);
     text("Connect the Evidence ", 200, 130);
 
+    //dots
 
     for (let d of this.dots) {
       circle(d[0], d[1], 20);
     }
 
     for (let i = 0; i < this.step; i++) {
+      //color and thickness of line
+      stroke(128, 0, 32);
+      strokeWeight(5);
+
       line(
         this.dots[i][0],
         this.dots[i][1],
@@ -165,9 +182,26 @@ function ins2() {
         this.dots[i + 1][1]
       );
     }
-  }
 
-  
+
+    // close final connection
+  if (this.step >= this.dots.length - 1) {
+
+    line(
+      this.dots[this.dots.length - 1][0],
+      this.dots[this.dots.length - 1][1],
+
+      this.dots[0][0],
+      this.dots[0][1]
+    );
+
+    //Next button
+     drawGui();
+     if (N.isPressed) {
+       mgr.showScene(ins3);
+     }
+  }
+  }
 
   this.mousePressed = function() {
 
@@ -178,27 +212,65 @@ function ins2() {
       this.step++;
     }
 
-
-    // Finished square
-    if (currentDot === dots.length - 1) {
-      // Connect back to start
-      ctx.beginPath();
-      ctx.moveTo(dots[dots.length - 1].x, dots[dots.length - 1].y);
-      ctx.lineTo(dots[0].x, dots[0].y);
-      ctx.stroke();
-
-      setTimeout(() => {
-        alert("Square completed!");
-      }, 100);
-    }
   }
 }
-//////////////////////  Paperwork  ////////////////////////
+//////////////////////  suspect //////////////////////// 
 
 function ins3()  {
 
+  this.setup = function() {
+    
+    
+    }
+ 
+ 
+    this.draw = function() {
+     background(225);
+       image(s2, 0 , 0 , width, height);
+    
+
+  //Text
+     textAlign(CENTER);
+     textSize(30);
+     
+     text("A witness came foward! Help her identify the suspect.", width/2,600);
+     text("He had blonde hair, etc", width/2,650);
+     
+     //Next button
+     drawGui();
+     if (N.isPressed) {
+       mgr.showScene(ins4);
+     }
+  };
 
  }
 
+
+
+////////////////////// Ending  //////////////////////// 
+
+ function ins4()  {
+
+  this.setup = function() {
+  }
+  
+    this.draw = function() {
+     background(225);
+       image(s2, 0 , 0 , width, height);
+    
+
+  //Text
+     textAlign(CENTER);
+     textSize(30);
+     
+     text("After interrogation, your partner was found alive", width/2,100);
+     text("Good job Agent!", width/2,150);
+     text("Not ready to go yet?", width/2,650);
+     text("Continue to explore the website", width/2,700);
+     
+  };
+
+ }
+ 
 
  

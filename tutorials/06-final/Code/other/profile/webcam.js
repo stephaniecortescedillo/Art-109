@@ -19,13 +19,13 @@ async function startWebcam(params) {
 startWebcam();
 
 
-///////////////////////////// Kitchen ///////////////
+///////////////////////////// Employee profile submission ///////////////
 
 
 // Variable to track the current slide in the carousel
 let currentSlide = 0;
 
-// Function to add an item to the shopping list
+// Function to add an item to the list
 function addToList(item) {
     // Get the <ul> element for the list
     const list = document.getElementById('list');
@@ -50,10 +50,10 @@ function updateCarousel() {
 document.getElementById('form').addEventListener('submit', function(e) {
     // Prevent the default form submission behavior (which would reload the page)
     e.preventDefault();
-    // Get the selected value from the dropdown
+    // 
     const selected = document.getElementById('choice-type').value;
-    // Get the value from the text input, trimmed of whitespace
     const custom = document.getElementById('custom').value.trim();
+   
     // Determine the milk type: use dropdown if selected, otherwise use text input
     const Type = selected || custom;
     // If a valid milk type is provided, add it to the list
@@ -62,26 +62,12 @@ document.getElementById('form').addEventListener('submit', function(e) {
         // Reset both the dropdown and text input
         document.getElementById('choice-type').value = '';
         document.getElementById('custom').value = '';
+     
     }
 });
 
-// Event listeners for carousel navigation buttons
-document.getElementById('prev-btn').addEventListener('click', function() {
-    // Move to the previous slide if not at the first
-    if (currentSlide > 0) {
-        currentSlide--;
-        updateCarousel();
-    }
-});
 
-document.getElementById('next-btn').addEventListener('click', function() {
-    // Move to the next slide if not at the last
-    const totalSlides = document.querySelectorAll('.carousel img').length;
-    if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        updateCarousel();
-    }
-});
+
 
 // Event listeners for clicking carousel images to add to list
 document.querySelectorAll('.carousel img').forEach(img => {

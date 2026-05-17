@@ -213,7 +213,7 @@ input[type="text"] {
 
 /* Button styles */
 button {
-    background-color: #007bff; /* Blue button */
+    background-color: #994e4e; /* Blue button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -258,8 +258,7 @@ button:hover {
 .carousel {
     display: flex;
     overflow: hidden;
-    width: 300px; /* Adjust based on image size */
-    transition: transform 0.3s ease; /* Smooth sliding transition */
+    width: 800px; 
 }
 
 /* Individual image styles in carousel */
