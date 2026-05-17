@@ -16,6 +16,7 @@ function intro () {
     
 
       //Text
+     textFont(fnt1);
      textAlign(CENTER);
      textSize(40);
      
@@ -102,20 +103,41 @@ function intro () {
 
     background(225);
 
-     if (s2) {
+     if (ins1) {
      
        image(s2, 0 , 0 , width, height);
+
+       // instruction timer (5 seconds)
+       console.log("Start");
+       
+        setTimeout(() => {
+        console.log(" 5 seconds");
+        
+          textSize(40);
+          text("Press 3 to continue", 700,750);
+
+        }, 5000);
+
+        console.log("End");
+
      }
+
+
     // draw images
     for (let p of pd) {
 
       image(p.img, p.x, p.y, p.w, p.h);
     }
 
-    // show text
+    // text
+    textFont(fnt1);
     fill(0);
     textSize(24);
     text(message, 710, 650);
+
+    
+       
+     
   };
 
 
@@ -160,6 +182,7 @@ function ins2() {
 
 
    //text
+    textFont(fnt1);
     textAlign(CENTER);
     textSize(30);
     text("Connect the Evidence ", 200, 130);
@@ -230,8 +253,10 @@ function ins3()  {
     
 
   //Text
+     textFont(fnt1);
      textAlign(CENTER);
      textSize(30);
+     fill
      
      text("A witness came foward! Help her identify the suspect.", width/2,600);
      text("He had blonde hair, etc", width/2,650);
@@ -260,6 +285,7 @@ function ins3()  {
     
 
   //Text
+     textFont(fnt1);
      textAlign(CENTER);
      textSize(30);
      

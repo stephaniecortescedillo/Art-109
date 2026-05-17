@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Form </title>
+    <title> Employee Form </title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 
@@ -15,7 +15,7 @@
 
      <nav class="navbar">
         <div class="nav-brand"> 
-            <a href="../../"><h1>ABI Files</h1></a>
+            <a href="../../"><h1>ABA Employee Profile</h1></a>
         </div>
         <div class="nav">
             <ul class="nav-menu">
@@ -28,81 +28,57 @@
 
 
     <main>
-             <h2>✮ ⋆ ˚｡ Employee profile Form⋆｡°✩</h2>
+             
           <div id="layout2">
                 <video id="webcam" autoplay playssinline></video>
-                    <div id="ui-panel">
+            
+                <div id="ui-panel">
+                <button onclick="LoginQuestions()">Update Info</button>
+                <div id="output" ></div>
+
+        <script>
+
+            function LoginQuestions() {
+             const name = prompt("Full name:");
+             const species = prompt("Species:");
+             const position = prompt("Current Job: ");
+             const outputDiv = document.getElementById("output");
+
+             outputDiv.innerHTML = `
+             <h3> ABI employee:</h3>
+             <p><strong>Name:</strong> ${name}</p>
+             <p><strong>Species:</strong> ${species}</p>
+             <p><strong>Position:</strong> ${position}</p>
+             `;
+            }
+        </script>
                      
-            <!-- Form section for selecting or entering milk type -->
-            <form id="form">
-
-                <!-- Label and text input for custom entry -->
-                <label for="custom">Full name:</label>
-                <input type="text" id="custom" placeholder="Kylo, Jean, Bbrnes">
-
-                 <!-- Label and text input for custom entry -->
-                <label for="custom2">Species:</label>
-                <input type="text" id="custom2" placeholder="Human,Twilek, Toguta,">
-
-                <!--Dropdown, predefined choices -->
-                <label for="choice-type">Gender:</label>
-                <select id="choice-type">
-                    <option value="">Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Yes">Yes</option>
-                    <option value="¯\_(ツ)_/¯">Wouldn't you like you know</option>
-                </select>
-
-                  <!--Dropdown, predefined choices -->
-                <label for="choice-type2">Position:</label>
-                <select id="choice-type2">
-                    <option value="">Classified</option>
-                    <option value="Agent">Agent</option>
-                    <option value="Forensic">Forensic</option>
-                    <option value="Eingeneer">Eingeneer</option>
-                    
-                </select>
-
-                <!-- Button to submit the form and add to list -->
-                <button type="submit">Submit</button>
-            </form> 
-
-           
+        
 
          </div>  
 
           <!-- Carousel section -->
-
-
             <section id="carousel-section">
-                <h2>Status</h2>
+                <h2>Aditional info:</h2>
                 <div class="carousel-container">
-                    <!-- Carousel images container -->
+                
+                    <!-- Images container -->
                     <div class="carousel">
-                        <img src="../../assets/S1.gif" alt="Dead" data-item="Dead">
-                        <img src="../../assets/S2.gif" alt="Medical Leave" data-item="Medical Leave">
-                        <img src="../../assets/S3.gif" alt="On duty" data-item="MIA">
+                     <img src="../../assets/S1.gif" alt="Dead">
+                     <img src="../../assets/S2.gif" alt="Medical Leave" >
+                     <img src="../../assets/S3.gif" alt="Ready top deploy" >
                     </div>
                 </div>
+
             </section>
-           <!-- Section to display the shopping list -->
-            <section id="-list">
-                <h2>Incoming Data</h2>
-                <ul id="list"></ul>
-            </section>
+              <h2>Clearance Level: ᯓ★ </h2>
+    
+           
         </div>       
-             
         </main>
-
-
 
     <script src="webcam.js"></script>
     </body> 
-
-
-
-       
 
     <footer class="flex-container">
         <p> &copy; ABI</p>

@@ -2,10 +2,12 @@
 
 let s11, s22, s33, s44, s55;
 let b1, b2, b3, b4,b5;
+let fnt1;
 let message = "";
 let pd =[];
 let mgr;
 
+ textFont(cou);
 
 function preload() {
 
@@ -31,6 +33,9 @@ function preload() {
  b5 = loadImage("assets/b5.png");
  b6 = loadImage("assets/b6.png");
 
+ //fonts
+  fnt1 = loadFont("assets/StardosStencil-Regular.ttf");
+
 }
  
 
@@ -51,6 +56,7 @@ function setup() {
 
 function draw() {
   mgr.draw();
+  
 }
 
 function mousePressed() {

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form </title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+
+<body>
+
+     <header>
+
+     <nav class="navbar">
+        <div class="nav-brand"> 
+            <a href="../../"><h1>ABI Archives</h1></a>
+        </div>
+        <div class="nav">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Case</a></li>
+            </ul>
+        </div>
+     </nav>
+    
+    </header>
+
+
+    <main>
+             <h2>✮ ⋆ ˚｡ ABI Archive ⋆｡°✩</h2>
+          <div id="layout2">
+                <video id="webcam" autoplay playssinline></video>
+                    <div id="ui-panel">
+                     
+            <!-- Form section for selecting or entering milk type -->
+            <form id="form">
+
+                <!-- Label and text input for custom entry -->
+                <label for="custom">Name of guilty party:</label>
+                <input type="text" id="custom" placeholder="Kylo, Jean, Barnes">
+
+                <!--Dropdown, predefined choices -->
+                <label for="choice-type">Gender:</label>
+                <select id="choice-type">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Yes">Yes</option>
+                    <option value="Wouldn't you like you know">Wouldn't you like you know</option>
+                </select>
+
+                
+                </select>
+
+                <!-- Button to submit the form and add to list -->
+                <button type="submit">Submit</button>
+            </form> 
+
+           
+
+         </div>  
+
+          <!-- Carousel section -->
+
+            <section id="carousel-section">
+                <h2>Select Case Status:</h2>
+                <div class="carousel-container">
+                    <!-- Carousel images container -->
+                    <div class="carousel">
+                        <img src="../../assets/S1.gif" alt="Guilty" data-item="Guilty">
+                        <img src="../../assets/S2.gif" alt="Pending" data-item="Pending">
+                        <img src="../../assets/S3.gif" alt="Innocent" data-item="Innocent">
+                    </div>
+                </div>
+            </section>
+           <!-- Section to display the shopping list -->
+            <section id="-list">
+                <h2>Incoming Data</h2>
+                <ul id="list"></ul>
+            </section>
+        </div>       
+             
+        </main>
+
+
+
+    <script src="webcam.js"></script>
+    </body> 
+
+
+
+       
+
+    <footer class="flex-container">
+        <p> &copy; ABI</p>
+    </footer>
+
+</html>
