@@ -4,10 +4,10 @@ let s11, s22, s33, s44, s55;
 let b1, b2, b3, b4,b5;
 let message = "";
 let pd =[];
+let mgr;
 
 
 function preload() {
-
 
   //background images
   s1 = loadImage("assets/bg1.png");
@@ -24,12 +24,12 @@ function preload() {
 
  //Crime-board images
 
-b1 = loadImage("assets/b1.png");
-b2 = loadImage("assets/b2.png");
-b3 = loadImage("assets/b3.png");
-b4 = loadImage("assets/b4.png");
-b5 = loadImage("assets/b5.png");
-b6 = loadImage("assets/b6.png");
+ b1 = loadImage("assets/b1.png");
+ b2 = loadImage("assets/b2.png");
+ b3 = loadImage("assets/b3.png");
+ b4 = loadImage("assets/b4.png");
+ b5 = loadImage("assets/b5.png");
+ b6 = loadImage("assets/b6.png");
 
 }
  
@@ -40,10 +40,10 @@ function setup() {
 
   mgr = new SceneManager();
   // Preload scenes but needed if showNextScene() is used.
-  mgr.addScene (intro);
-  mgr.addScene (ins1);
-  mgr.addScene (ins2);
-  mgr.addScene (ins3);
+  mgr.addScene(intro);
+  mgr.addScene(ins1);
+  mgr.addScene(ins2);
+  mgr.addScene(ins3);
 
   mgr.showNextScene();
 }
@@ -53,43 +53,10 @@ function draw() {
 }
 
 function mousePressed() {
-  mgr.mousePressed();
-}
-
-function mouseDragged() {
-  mgr.handleEvent("mouseDragged");
-}
-
-function keyPressed()
-{
-    // You can optionaly handle the key press at global level...
-    switch(key)
-    {
-        case '1':
-            mgr.showScene( intro );
-            break;
-         case '2':
-            mgr.showScene( ins1 );
-            break;
-            case '3':
-            mgr.showScene( ins2 );
-            break;
-            case '4':
-            mgr.showScene( ins3);
-            break;
-           
-    }
-6
-    // ... then dispatch via the SceneManager.
-    mgr.keyPressed();
-}
-function touchMoved() {
-  return false;
-}
+ // insert crying emoji
+  mgr.handleEvent("mousePressed");
 
 
-
-function mousePressed() {
 
   for (let p of pd) {
 
@@ -103,4 +70,40 @@ function mousePressed() {
       message = p.text;
     }
   }
+
+  /////////crime board code
+
+  // stop after complete
+  if (step >= dots.length - 1) return;
+
+  // next target dot
+  let next = dots[step + 1];
+
+  // check if click is close enough
+  if (
+   dist(mouseX, mouseY, next[0], next[1]) < 100
+  ) {
+    step++;
+  }
 }
+
+function mouseDragged() {
+  mgr.handleEvent("mouseDragged");
+}
+
+function keyPressed(){
+   mgr.handleEvent("keyPressed");
+  // less confusing way3
+    if (key === "1") mgr.showScene(intro);
+    if (key === "2") mgr.showScene(ins1);
+    if (key === "3") mgr.showScene(ins2);
+    if (key === "4") mgr.showScene(ins3);
+           
+    }
+
+
+function touchMoved() {
+  return false;
+}
+
+

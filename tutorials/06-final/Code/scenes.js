@@ -4,7 +4,7 @@ function intro () {
  
   this.setup = function() {
     textSize(30);
-    background(161, 252, 255);
+    background(225);
 
 //button 1
       gui = createGui();
@@ -128,34 +128,71 @@ function intro () {
 
 ///////////////////////  Crime Board  ////////////////////////
 
-function ins2()  {
-  
- 
+function ins2() {
 
-this.draw = function(){
-    background(0);
-    push();
-    imageMode(CENTER);
-    if (s3) {
-      image(s3, width / 2 , height / 2 , 900, 800);
-    }
-    pop();
+  this.setup = function() {
 
+    this.dots = [
+      [140,250],
+      [500,150],
+      [350,500],
+      [800,580]
+      //[500,600],
+    
+    ];
 
-//check for Win
-  if (points >= 10){
-    noLoop();
+    this.step = 0;
+  }
+
+  this.draw = function() {
+       background(225);
+       image(s3, 0 , 0 , width, height);
+   //text
     textAlign(CENTER);
-    textSize(50);
-    fill(0);
-    text("Great Job!", width / 2+10, height / 2);
-    text("Press 4 to continue", width / 2+15, height / 2 + 60);
+    textSize(30);
+    text("Connect the Evidence ", 200, 130);
+
+
+    for (let d of this.dots) {
+      circle(d[0], d[1], 20);
     }
+
+    for (let i = 0; i < this.step; i++) {
+      line(
+        this.dots[i][0],
+        this.dots[i][1],
+        this.dots[i + 1][0],
+        this.dots[i + 1][1]
+      );
+    }
+  }
+
+  
+
+  this.mousePressed = function() {
+
+    let next = this.dots[this.step + 1];
+    if (!next) return;
+
+    if (dist(mouseX, mouseY, next[0], next[1]) < 20) {
+      this.step++;
+    }
+
+
+    // Finished square
+    if (currentDot === dots.length - 1) {
+      // Connect back to start
+      ctx.beginPath();
+      ctx.moveTo(dots[dots.length - 1].x, dots[dots.length - 1].y);
+      ctx.lineTo(dots[0].x, dots[0].y);
+      ctx.stroke();
+
+      setTimeout(() => {
+        alert("Square completed!");
+      }, 100);
+    }
+  }
 }
-
-
-}
-
 //////////////////////  Paperwork  ////////////////////////
 
 function ins3()  {
