@@ -11,7 +11,7 @@ function intro () {
  
     this.draw = function() {
      background(225);
-     image(s2, 0 , 0 , width, height);
+     image(s1, 0 , 0 , width, height);
     
 
     //Text
@@ -106,7 +106,7 @@ function intro () {
 
      if (ins1) {
      
-       image(s2, 0 , 0 , width, height);
+       image(s1, 0 , 0 , width, height);
 
        // instruction timer (5 seconds)
        console.log("Start");
@@ -143,8 +143,8 @@ function ins2() {
 
     this.dots = [
       [140,250],
-      [620,150],
-      [300,600],
+      [600,150],
+      [350,600],
       [700,500]
     ];
     this.step = 0;
@@ -153,14 +153,13 @@ function ins2() {
   this.draw = function() {
     //background
        background(225);
-       image(s3, 0 , 0 , width, height);
+       image(s2, 0 , 0 , width, height);
 
    //crime board images
-    image(b1, 370 , 300 , 300, 300);
     image(b2, 30 , 150 , 300, 300);
-    image(b3, 200 , 500 , 300, 300);
+    image(b3, 250 , 450 , 300, 300);
     image(b4, 500 , 20 , 300, 300);
-    image(b6, 605 , 300 , 300, 300);
+    image(b6, 505 , 400 , 300, 300);
     //Notes
     image(b5, 350 , 100 , 200, 200);
     image(b7, -50 , 420 , 400, 400);
@@ -225,7 +224,7 @@ function ins2() {
 }
 //////////////////////  suspect //////////////////////// 
 
-function ins3()  {
+function ins3()  {2
 
   this.setup = function () {
     // image data
@@ -245,7 +244,7 @@ function ins3()  {
         w: 300,
         h: 300,
         img: b22,
-        text: "Yeah! Press 3 to continue"
+        text: "Yeah! Press 5 to continue"
       },
 
       {
@@ -260,7 +259,7 @@ function ins3()  {
     }
 
      this.draw = function() {
-      background(225);
+      background(170,155,130);
      
  // draw images
       for (let p of pd) {
@@ -269,6 +268,7 @@ function ins3()  {
   //Text
      textFont(fnt1);
      textAlign(CENTER);
+     text(message, 500, 650);
      textSize(37);
      text("A witness came foward! Help her identify the suspect.", width/2,100);
      text("He has blonde hair, blue eyes and a green sweater", width/2,700);
@@ -285,8 +285,8 @@ function ins3()  {
   }
   
     this.draw = function() {
-     background(225);
-     image(s2, 0 , 0 , width, height);
+     background(170,155,130);
+     image(s3, 0 ,250 , width, 700);
 
   //Text
      textFont(fnt1);
@@ -295,8 +295,7 @@ function ins3()  {
      
      text("After interrogation, your partner was found alive", width/2,100);
      text("Good job Agent!", width/2,150);
-     text("Not ready to go yet?", width/2,650);
-     text("Continue to explore the website", width/2,700);
+     text("Not ready to go yet? Continue to explore the site", width/2,220);
      
   };
 

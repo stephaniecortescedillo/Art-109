@@ -1,30 +1,5 @@
 
 
-const webcamVideo = document.querySelector("#webcam");
-
-async function startWebcam(params) {
-    try{
-    const stream = await navigator.mediaDevices.getUserMedia({
-    video: true,
-    audio: false
-});
-
-    webcamVideo.srcObject = stream;
-
-
-    }catch(error){
-        console.log("error accessing webcam");
-    }
-}
-startWebcam();
-
-
-///////////////////////////// Employee profile submission ///////////////
-
-
-// Variable to track the current slide in the carousel
-let currentSlide = 0;
-
 // Function to add an item to the list
 function addToList(item) {
     // Get the <ul> element for the list
@@ -54,9 +29,8 @@ document.getElementById('form').addEventListener('submit', function(e) {
     const selected = document.getElementById('choice-type').value;
     const custom = document.getElementById('custom').value.trim();
    
-    // Determine the milk type: use dropdown if selected, otherwise use text input
+
     const Type = selected || custom;
-    // If a valid milk type is provided, add it to the list
     if (Type) {
         addToList(Type);
         // Reset both the dropdown and text input
@@ -65,9 +39,6 @@ document.getElementById('form').addEventListener('submit', function(e) {
      
     }
 });
-
-
-
 
 // Event listeners for clicking carousel images to add to list
 document.querySelectorAll('.carousel img').forEach(img => {

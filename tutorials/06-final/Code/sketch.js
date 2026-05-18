@@ -13,8 +13,8 @@ function preload() {
 
   //background images
   s1 = loadImage("assets/bg1.PNG");
-  s2 = loadImage("assets/bg1.PNG");
-  s3 = loadImage("assets/bg2.jpg");
+  s2 = loadImage("assets/bg2.jpg");
+  s3 = loadImage("assets/bg3.png");
  
  // kitchen images
  s11 = loadImage("assets/1.gif");
@@ -26,7 +26,6 @@ function preload() {
 
  //Crime-board images
 
- b1 = loadImage("assets/b1.PNG");
  b2 = loadImage("assets/b2.PNG");
  b3 = loadImage("assets/b3.PNG");
  b4 = loadImage("assets/b4.PNG");

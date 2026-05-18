@@ -29,7 +29,7 @@ html{
 /* Color Variables */
 :root {
   --bg-color: #09101d;
-  --Text:#acacac;
+  --Text:#ddd9d9;
   --highlight: #c24f4f;
     --titles: #880101;
    --item: #8d9bb1;
@@ -175,9 +175,6 @@ footer{
    
 }
 
-/* Forms*/
-
-
 
 
 /* Form styles */
@@ -211,7 +208,6 @@ input[type="text"] {
 /* Button styles */
 button {
     background-color: var(--titles);/* Blue button */
-    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -259,7 +255,7 @@ button:hover {
 
 /* Navigation button styles */
 #prev-btn, #next-btn {
-    background-color: #ccc;
+    background-color: #cccccc;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -290,8 +286,14 @@ button:hover {
 a:link, a:visited {
 
   padding: 14px 25px;
-  fill: #528797;
+  fill: #bd3030;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+#img1 {
+    width: 30rem;
+   margin-left: 15rem;
+    
 }
