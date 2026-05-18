@@ -1,7 +1,7 @@
 //Stores stuff
 
 let s11, s22, s33, s44, s55;
-let b1, b2, b3, b4, b5, b6, b7, b11, b22, b33;
+let b2, b3, b4, b5, b6, b7, b11, b22, b33;
 let fnt1;
 let message = "";
 let pd =[];
