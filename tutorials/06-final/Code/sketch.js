@@ -26,11 +26,11 @@ function preload() {
 
  //Crime-board images
 
- b2 = loadImage("assets/b2.PNG");
- b3 = loadImage("assets/b3.PNG");
- b4 = loadImage("assets/b4.PNG");
- b5 = loadImage("assets/b5.PNG");
- b6 = loadImage("assets/b6.PNG");
+ b2 = loadImage("assets/b2.png");
+ b3 = loadImage("assets/b3.png");
+ b4 = loadImage("assets/b4.png");
+ b5 = loadImage("assets/b5.png");
+ b6 = loadImage("assets/b6.png");
  b7 = loadImage("assets/b7.PNG");
 
  //suspect photos
