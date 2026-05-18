@@ -43,7 +43,6 @@ html{
 
 #layout {
     display: grid;
-
     grid-template-columns: 900px 1fr;
     padding: 50px;
     width: 100vw;
@@ -60,11 +59,12 @@ html{
 }
 
 
-
 #scenemg {
     width: 900px;
     height: 800px;
 }
+
+/* Side section*/
 
 #ui-panel {
     padding: 20px;
@@ -79,14 +79,11 @@ html{
     padding: 3rem;
     background-color: var(--Item);
      border-radius: 2rem;
-     box-shadow: 0 4px 12px #00000014;
+    
 }
 
 
 /*General*/
-
-
-
 h2{
     padding: 10; 
     color: var(--titles);
@@ -109,7 +106,7 @@ nav a {
 }
 
 nav a:hover{
-    color: var(--highlight)
+    color: var(--highlight);
 }
 
 .navbar {
@@ -213,8 +210,8 @@ input[type="text"] {
 
 /* Button styles */
 button {
-    background-color: #994e4e; /* Blue button */
-    color: white;
+    background-color: var(--titles);/* Blue button */
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -224,19 +221,9 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background-color: #693528; /* Darker blue on hover */
+    background-color: var(--highlight) /* Darker blue on hover */
 }
 
-/* Shopping list section styles */
-#shopping-list {
-    background-color: rgb(17, 3, 3); /* Light background for shopping list */
-    border-radius: 5px;
-    padding: 20px;
-    width: 80%;
-    max-width: 400px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
 
 /* Carousel section styles */
 #carousel-section {
@@ -303,6 +290,7 @@ button:hover {
 a:link, a:visited {
 
   padding: 14px 25px;
+  fill: #528797;
   text-align: center;
   text-decoration: none;
   display: inline-block;

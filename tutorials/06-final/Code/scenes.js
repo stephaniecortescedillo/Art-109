@@ -52,7 +52,7 @@ function intro () {
 
       {
         x: 260,
-        y: 360,
+        y: 300,
         w: 120,
         h: 100,
         img: s22,
@@ -61,7 +61,7 @@ function intro () {
 
       {
         x: 190,
-        y: 400,
+        y: 450,
         w: 120,
         h: 100,
         img: s33,
@@ -69,7 +69,7 @@ function intro () {
       },
 
       {
-        x: 390,
+        x: 360,
         y: 400,
         w: 120,
         h: 100,
@@ -88,11 +88,11 @@ function intro () {
        
       {
         x: 300,
-        y: 520,
+        y: 500,
         w: 120,
         h: 100,
         img: s33,
-        text: "Blood x3"
+        text: "Blood x 3"
       },
 
 
@@ -170,15 +170,14 @@ function ins2() {
        image(s3, 0 , 0 , width, height);
 
    //crime board images
-    image(b1, 370 , 300 , 200, 200);
-    image(b2, 80 , 200 , 200, 200);
-    image(b3, 270 , 540 , 200, 200);
-    image(b4, 605 , 100 , 200, 200);
-    image(b5, 50 , 450 , 200, 200);
-    image(b6, 645 , 350 , 200, 200);
-    //decorations
-    image(b5, 700 , 600 , 150, 150);
-    image(b5, 400 , 90 , 150, 150);
+    image(b1, 370 , 300 , 300, 300);
+    image(b2, 30 , 150 , 300, 300);
+    image(b3, 200 , 500 , 300, 300);
+    image(b4, 500 , 20 , 300, 300);
+    image(b6, 605 , 300 , 300, 300);
+    //Notes
+    image(b5, 350 , 100 , 200, 200);
+    image(b7, -50 , 420 , 400, 400);
 
 
    //text
@@ -186,7 +185,9 @@ function ins2() {
     textAlign(CENTER);
     textSize(30);
     text("Connect the Evidence ", 200, 130);
-
+    textSize(20);
+    text("Not enough blood", 150 , 600);
+    text("= Not dead ", 150 , 650);
     //dots
 
     for (let d of this.dots) {

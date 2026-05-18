@@ -1,7 +1,7 @@
 //Stores stuff
 
 let s11, s22, s33, s44, s55;
-let b1, b2, b3, b4,b5;
+let b1, b2, b3, b4, b5, b6, b7;
 let fnt1;
 let message = "";
 let pd =[];
@@ -12,8 +12,8 @@ let mgr;
 function preload() {
 
   //background images
-  s1 = loadImage("assets/bg1.png");
-  s2 = loadImage("assets/bg1.png");
+  s1 = loadImage("assets/bg1.PNG");
+  s2 = loadImage("assets/bg1.PNG");
   s3 = loadImage("assets/bg2.jpg");
  
  // kitchen images
@@ -26,12 +26,14 @@ function preload() {
 
  //Crime-board images
 
- b1 = loadImage("assets/b1.png");
- b2 = loadImage("assets/b2.png");
- b3 = loadImage("assets/b3.png");
- b4 = loadImage("assets/b4.png");
- b5 = loadImage("assets/b5.png");
- b6 = loadImage("assets/b6.png");
+ b1 = loadImage("assets/b1.PNG");
+ b2 = loadImage("assets/b2.PNG");
+ b3 = loadImage("assets/b3.PNG");
+ b4 = loadImage("assets/b4.PNG");
+ b5 = loadImage("assets/b5.PNG");
+ b6 = loadImage("assets/b6.PNG");
+ b7 = loadImage("assets/b7.PNG");
+
 
  //fonts
   fnt1 = loadFont("assets/StardosStencil-Regular.ttf");
