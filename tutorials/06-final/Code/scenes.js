@@ -6,22 +6,21 @@ function intro () {
 
     //button 1
       gui = createGui();
-      N = createButton("Next", 560, 600, 150, 50); // x, y, width, height
+      N = createButton("Next", 560, 700, 150, 50); // x, y, width, height
     }
- 
  
     this.draw = function() {
      background(225);
      image(s2, 0 , 0 , width, height);
     
 
-      //Text
+    //Text
      textFont(fnt1);
      textAlign(CENTER);
      textSize(40);
      
-     text(" Kidnapped ", width/2+210,200);
-     text("By stephanie Cortes", width/2+250,250);
+     text(" Kidnapped ", width/2+210,600);
+     text("By stephanie Cortes", 650,650);
      
      //Next button
      drawGui();
@@ -99,6 +98,8 @@ function intro () {
     ];
   };
 
+   //Instruction timer
+
   this.draw = function () {
 
     background(225);
@@ -110,39 +111,27 @@ function intro () {
        // instruction timer (5 seconds)
        console.log("Start");
        
-        setTimeout(() => {
-        console.log(" 5 seconds");
-        
-          textSize(40);
-          text("Press 3 to continue", 700,750);
+       setTimeout(() => {
+       console.log(" 5 seconds");
+        textSize(40);
+        text("Press 3 to continue", 700,750);
 
         }, 5000);
 
         console.log("End");
-
      }
 
-
     // draw images
-    for (let p of pd) {
-
+      for (let p of pd) {
       image(p.img, p.x, p.y, p.w, p.h);
-    }
+      }
 
     // text
-    textFont(fnt1);
-    fill(0);
-    textSize(24);
-    text(message, 710, 650);
-
-    
-       
-     
+      textFont(fnt1);
+      fill(0);
+      textSize(24);
+      text(message, 710, 650);
   };
-
-
-  
-
 }
 
 
@@ -157,10 +146,7 @@ function ins2() {
       [620,150],
       [300,600],
       [700,500]
-      
-    
     ];
-
     this.step = 0;
   }
 
@@ -188,8 +174,10 @@ function ins2() {
     textSize(20);
     text("Not enough blood", 150 , 600);
     text("= Not dead ", 150 , 650);
-    //dots
 
+
+
+    //dots
     for (let d of this.dots) {
       circle(d[0], d[1], 20);
     }
@@ -214,7 +202,6 @@ function ins2() {
     line(
       this.dots[this.dots.length - 1][0],
       this.dots[this.dots.length - 1][1],
-
       this.dots[0][0],
       this.dots[0][1]
     );
@@ -228,10 +215,8 @@ function ins2() {
   }
 
   this.mousePressed = function() {
-
     let next = this.dots[this.step + 1];
     if (!next) return;
-
     if (dist(mouseX, mouseY, next[0], next[1]) < 20) {
       this.step++;
     }
@@ -242,38 +227,57 @@ function ins2() {
 
 function ins3()  {
 
-  this.setup = function() {
-    
-    
-    }
- 
- 
-    this.draw = function() {
-     background(225);
-       image(s2, 0 , 0 , width, height);
-    
+  this.setup = function () {
+    // image data
+    pd = [
 
+      {
+        x: 10,
+        y: 200,
+        w: 300,
+        h: 300,
+        img: b11,
+        text: "Nah! try again"
+      },      
+      {
+        x: 320,
+        y: 200,
+        w: 300,
+        h: 300,
+        img: b22,
+        text: "Yeah! Press 3 to continue"
+      },
+
+      {
+        x: 600,
+        y: 200,
+        w: 300,
+        h: 300,
+        img: b33,
+        text: "Nah! try again"
+      },
+    ]
+    }
+
+     this.draw = function() {
+      background(225);
+     
+ // draw images
+      for (let p of pd) {
+      image(p.img, p.x, p.y, p.w, p.h);
+      }
   //Text
      textFont(fnt1);
      textAlign(CENTER);
-     textSize(30);
-     fill
-     
-     text("A witness came foward! Help her identify the suspect.", width/2,600);
-     text("He had blonde hair, etc", width/2,650);
-     
-     //Next button
-     drawGui();
-     if (N.isPressed) {
-       mgr.showScene(ins4);
-     }
+     textSize(37);
+     text("A witness came foward! Help her identify the suspect.", width/2,100);
+     text("He has blonde hair, blue eyes and a green sweater", width/2,700);
+  
   };
-
  }
 
-
-
 ////////////////////// Ending  //////////////////////// 
+
 
  function ins4()  {
 
@@ -282,8 +286,7 @@ function ins3()  {
   
     this.draw = function() {
      background(225);
-       image(s2, 0 , 0 , width, height);
-    
+     image(s2, 0 , 0 , width, height);
 
   //Text
      textFont(fnt1);

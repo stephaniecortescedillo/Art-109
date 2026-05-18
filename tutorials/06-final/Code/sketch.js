@@ -1,13 +1,13 @@
 //Stores stuff
 
 let s11, s22, s33, s44, s55;
-let b1, b2, b3, b4, b5, b6, b7;
+let b1, b2, b3, b4, b5, b6, b7, b11, b22, b33;
 let fnt1;
 let message = "";
 let pd =[];
+let pd2 =[];
 let mgr;
 
- textFont(cou);
 
 function preload() {
 
@@ -34,6 +34,10 @@ function preload() {
  b6 = loadImage("assets/b6.PNG");
  b7 = loadImage("assets/b7.PNG");
 
+ //suspect photos
+ b11 = loadImage("assets/b11.PNG");
+ b22 = loadImage("assets/b22.PNG");
+ b33 = loadImage("assets/b33.PNG");
 
  //fonts
   fnt1 = loadFont("assets/StardosStencil-Regular.ttf");
@@ -66,7 +70,7 @@ function mousePressed() {
   mgr.handleEvent("mousePressed");
 
 
-
+// kitchen game
   for (let p of pd) {
 
     if (
